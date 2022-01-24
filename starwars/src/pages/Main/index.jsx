@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
+import { MainContentContainer } from "./styles";
 
 const Main = (props) => {
   return (
-    <div>
-      Teste
-    </div>
+    <MainContentContainer>
+    </MainContentContainer>
   );
-}
+};
 
 export default Main;

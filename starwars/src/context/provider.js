@@ -8,12 +8,10 @@ const Provider = ({ children }) => {
   const [people, setPeople] = useState([]);
 
   const getPeople = async () => {
-    const data = await api.get('/people/');
-    const people = data.data.results;
+    const data = await api.get('/all.json');
+    const people = data.data;
     setPeople(people);
   };
-
-  console.log(people);
   
   useEffect(() => {
     getPeople()

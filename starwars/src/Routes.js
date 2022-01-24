@@ -7,7 +7,6 @@ const Routes = () => {
   return (
     <Switch>
       <Route exact path="/" element={<Main />} />
-      {/* <Route path="*" element={<Error />} /> */}
     </Switch>
   );
 }
