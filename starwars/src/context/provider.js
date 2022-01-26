@@ -2,23 +2,27 @@ import React, { useEffect, useState } from "react";
 import { node } from "prop-types";
 import Context from "./context";
 import api from "src/services/api";
+import _ from "underscore";
 
 const Provider = ({ children }) => {
-
   const [people, setPeople] = useState([]);
+  const [searchWord, setSearchWord] = useState("");
 
   const getPeople = async () => {
-    const data = await api.get('/all.json');
+    const data = await api.get("/all.json");
     const people = data.data;
-    setPeople(people);
+    const sortedPeople = _.sortBy(people, "name");
+    setPeople(sortedPeople);
   };
-  
+
   useEffect(() => {
-    getPeople()
+    getPeople();
   }, []);
 
   const contextValue = {
-    people
+    people,
+    setSearchWord,
+    searchWord,
   };
 
   return <Context.Provider value={contextValue}>{children}</Context.Provider>;

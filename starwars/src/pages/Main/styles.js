@@ -13,7 +13,7 @@ const MainContentContainer = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 200px;
+  padding-top: 280px;
   z-index: 10;
 `;
 

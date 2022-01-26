@@ -23,6 +23,7 @@ const CardContentContainer = styled.div`
   p {
     color: #6FE5D8;
     text-align: center;
+    font-weight: 700;
   }
 `;
 

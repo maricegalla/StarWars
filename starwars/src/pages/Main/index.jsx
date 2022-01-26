@@ -6,7 +6,6 @@ import Card from "src/components/Card";
 
 const Main = () => {
   const { people } = useContext(Context);
-  console.log(people)
 
   return (
     <MainContentContainer>
