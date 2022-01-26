@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import background from "src/assets/background.jpg";
 
 const HeaderContentContainer = styled.div`
   position: fixed;
@@ -11,7 +12,7 @@ const HeaderContentContainer = styled.div`
   width: 100%;
   height: 160px;
   padding: 30px 0 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: url(${background}) no-repeat center center fixed;;
 
   img {
     height: 50%;

@@ -3,15 +3,18 @@ import background from "src/assets/background.jpg";
 
 const MainContentContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  background: url(${background}) no-repeat center center fixed;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px;
+  justify-content: center;
+  height: 100%;
+  background: url(${background}) repeat-y center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding-top: 200px;
+  z-index: 10;
 `;
 
 export { MainContentContainer };

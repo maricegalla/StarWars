@@ -3,6 +3,7 @@ import styled from "styled-components";
 const CardContentContainer = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 20px;
   top: 0;
@@ -14,8 +15,14 @@ const CardContentContainer = styled.div`
   border-radius: 10px;
 
   img {
-    height: 10%;
-    width: 10%;
+    width: fit-content;
+    max-height: 200px;
+    border-radius: 10px;
+  }
+
+  p {
+    color: #6FE5D8;
+    text-align: center;
   }
 `;
 
