@@ -6,6 +6,7 @@ const Header = (props) => {
   return (
     <HeaderContentContainer>
       <img src={Logo} alt="Logo" />
+      <input type="text" placeholder="Type character name"></input>
     </HeaderContentContainer>
   );
 };

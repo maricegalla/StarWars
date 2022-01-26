@@ -1,9 +1,12 @@
 import React from "react";
 import { MainContentContainer } from "./styles";
 
-const Main = (props) => {
+import Card from "src/components/Card";
+
+const Main = () => {
   return (
     <MainContentContainer>
+      <Card />
     </MainContentContainer>
   );
 };
