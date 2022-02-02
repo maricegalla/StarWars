@@ -15,6 +15,7 @@ const MainContentContainer = styled.div`
   background-size: cover;
   padding-top: 280px;
   z-index: 10;
+  min-height: 100vh;
 `;
 
 export { MainContentContainer };
