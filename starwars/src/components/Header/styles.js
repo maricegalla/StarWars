@@ -8,14 +8,13 @@ const HeaderContentContainer = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  top: 0;
   width: 100%;
-  height: fit-content;
-  padding: 30px 0 20px;
+  height: 260px;
+  padding: 30px 0 30px;
   background: url(${background}) no-repeat center center fixed;;
 
   img {
-    width: 15%;
+    width: 300px;
   }
 
   input {

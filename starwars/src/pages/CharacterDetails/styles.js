@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import background from "src/assets/background.jpg";
 
-const MainContentContainer = styled.div`
+const DetailContentContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
@@ -15,10 +15,6 @@ const MainContentContainer = styled.div`
   padding: 280px 50px 50px;
   z-index: 10;
   min-height: 100vh;
-
-  a {
-    text-decoration: none;
-  }
 `;
 
-export { MainContentContainer };
+export { DetailContentContainer };

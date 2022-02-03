@@ -13,6 +13,7 @@ const CardContentContainer = styled.div`
   background-color: rgba(0, 0, 0, 0.7);
   border: #fff 1px solid;
   border-radius: 10px;
+  text-decoration: none;
 
   img {
     width: fit-content;
