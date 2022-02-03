@@ -19,6 +19,15 @@ const MainContentContainer = styled.div`
   a {
     text-decoration: none;
   }
+
+  h1 {
+    font-size: 50px;
+    color: red;
+  }
+
+  svg {
+    margin-top: 150px;
+  }
 `;
 
 export { MainContentContainer };

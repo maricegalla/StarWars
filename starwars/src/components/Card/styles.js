@@ -26,6 +26,11 @@ const CardContentContainer = styled.div`
     text-align: center;
     font-weight: 700;
   }
+
+  :hover {
+   transform: scale(1.1);
+   transition: transform 400ms ease-in-out;
+  }
 `;
 
 export { CardContentContainer };
