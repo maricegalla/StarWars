@@ -8,6 +8,7 @@ const Provider = ({ children }) => {
   const [people, setPeople] = useState([]);
   const [searchWord, setSearchWord] = useState("");
   const [loading, setLoading] = useState(false);
+  const [peopleDetail, setPeopleDetail] = useState([]);
 
   const getPeople = async () => {
     setLoading(true);
@@ -15,7 +16,9 @@ const Provider = ({ children }) => {
     const people = data.data;
     const sortedPeople = _.sortBy(people, "name");
     setPeople(sortedPeople);
-    setInterval(() => {setLoading(false)}, 2000)
+    setInterval(() => {
+      setLoading(false);
+    }, 2000);
   };
 
   useEffect(() => {
@@ -27,6 +30,8 @@ const Provider = ({ children }) => {
     setSearchWord,
     searchWord,
     loading,
+    setPeopleDetail,
+    peopleDetail,
   };
 
   return <Context.Provider value={contextValue}>{children}</Context.Provider>;

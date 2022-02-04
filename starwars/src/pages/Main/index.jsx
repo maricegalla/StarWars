@@ -9,6 +9,8 @@ import { ReactComponent as Loader } from "src/assets/loading.svg";
 const Main = () => {
   const { people, searchWord, loading } = useContext(Context);
 
+  console.log(window.location.pathname)
+
   let charctersCard;
   if (searchWord !== "") {
     charctersCard = people

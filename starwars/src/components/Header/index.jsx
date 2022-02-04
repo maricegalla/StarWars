@@ -6,15 +6,25 @@ import Context from "src/context/context";
 const Header = (props) => {
   const { setSearchWord, searchWord } = useContext(Context);
 
+  const { pathname } = window.location;
+
   return (
     <HeaderContentContainer>
-      <img src={Logo} alt="Logo" />
-      <input
-        type="search"
-        placeholder="Type character name"
-        onChange={(e) => setSearchWord(e.target.value)}
-        value={searchWord}
-      />
+      {pathname === "/" ? (
+        <>
+          <img src={Logo} alt="Logo" />
+          <input
+            type="search"
+            placeholder="Type character name"
+            onChange={(e) => setSearchWord(e.target.value)}
+            value={searchWord}
+          />
+        </>
+      ) : (
+        <>
+          <img src={Logo} alt="Logo" />
+        </>
+      )}
     </HeaderContentContainer>
   );
 };
