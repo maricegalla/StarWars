@@ -7,7 +7,7 @@ const DetailContentContainer = styled.div`
   align-items: center;
   justify-content: center;
   height: 100%;
-  gap: 30px;
+  gap: 80px;
   background: url(${background}) repeat-y center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -17,10 +17,12 @@ const DetailContentContainer = styled.div`
   z-index: 10;
   min-height: 100vh;
 
-  a {
-    color: #6fe5d8;
-    font-weight: bold; 
-    text-decoration: none;
+  button {
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
   }
 `;
 

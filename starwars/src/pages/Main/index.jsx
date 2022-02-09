@@ -5,11 +5,10 @@ import Header from "src/components/Header";
 import Context from "src/context/context";
 import Card from "src/components/Card";
 import { ReactComponent as Loader } from "src/assets/loading.svg";
+import { CgChevronDoubleUpO } from "react-icons/cg";
 
 const Main = () => {
   const { people, searchWord, loading } = useContext(Context);
-
-  console.log(window.location.pathname)
 
   let charctersCard;
   if (searchWord !== "") {
@@ -18,8 +17,8 @@ const Main = () => {
         person.name.toLowerCase().includes(searchWord.toLowerCase())
       )
       .map((person, index) => (
-        <Link to={`/character/${person.id}`}>
-          <Card key={index}>
+        <Link to={`/character/${person.id}`} key={index}>
+          <Card>
             <img src={person.image} alt={person.name} />
             <p>{person.name}</p>
           </Card>
@@ -27,8 +26,8 @@ const Main = () => {
       ));
   } else {
     charctersCard = people.map((person, index) => (
-      <Link to={`/character/${person.id}`}>
-        <Card key={index}>
+      <Link to={`/character/${person.id}`} key={index}>
+        <Card>
           <img src={person.image} alt={person.name} />
           <p>{person.name}</p>
         </Card>
@@ -40,7 +39,14 @@ const Main = () => {
     <>
       <Header />
       <MainContentContainer>
-        {loading ? <Loader /> : charctersCard}
+        <div>{loading ? <Loader /> : charctersCard}</div>
+        {loading ? (
+          ""
+        ) : (
+          <button onClick={() => window.scroll(0, 0)}>
+            <CgChevronDoubleUpO />
+          </button>
+        )}
       </MainContentContainer>
     </>
   );

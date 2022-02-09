@@ -3,7 +3,7 @@ import background from "src/assets/background.jpg";
 
 const MainContentContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 50px;
   justify-content: center;
   height: 100%;
@@ -25,8 +25,20 @@ const MainContentContainer = styled.div`
     color: red;
   }
 
-  svg {
-    margin-top: 150px;
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    height: 100%;
+  }
+
+  button {
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    cursor: pointer;
   }
 `;
 

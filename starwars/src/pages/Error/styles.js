@@ -30,7 +30,7 @@ const ErrorContentContainer = styled.div`
 
   p {
     height: fit-content;
-    font-size: 20px;
+    font-size: 24px;
     color: #6fe5d8;
     text-align: center;
   }
@@ -39,6 +39,7 @@ const ErrorContentContainer = styled.div`
     height: fit-content;
     color: #6fe5d8;
     text-align: center;
+    font-size: 18px;
   }
 
   a {
